@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<package xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://www.mendix.com/package/1.0/">
+  <modelerProject xmlns="http://www.mendix.com/modelerProject/1.0/">
+    <module name="JSONToTree" />
+    <projectFile path="project.mpr" />
+    <files>
+      <file path="javasource\jsontotree\Misc.java" />
+      <file path="userlib\jackson-annotations-2.10.2.jar" />
+      <file path="userlib\jackson-core-2.10.2.jar" />
+      <file path="userlib\jackson-databind-2.10.2.jar" />
+      <file path="javasource\jsontotree\actions\ConvertJSONToRootTree.java" />
+    </files>
+  </modelerProject>
+</package>
