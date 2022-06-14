@@ -58,7 +58,13 @@ public class Misc {
 	 */
 	private static void traverseObject(IMendixObject rootObject, IContext ctx, JsonNode node, String childKey, IMendixObject parentMXObject) {
 		JsonNode child = node.get(childKey);
-		boolean hasChild = traversable(child);
+		boolean hasChild;
+		if (child == null){
+			hasChild = false;
+		} else {
+			hasChild = traversable(child);
+		}
+		
 		JSONObject copy = createJSONObject(node, childKey);
 		String jsonContent = copy.toString();
 		
